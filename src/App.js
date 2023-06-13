@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
 
 function App() {
+  const [breads, setBreads] = useState([])
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const URL = `${process.env.REACT_APP_BACKEND_URI}/breads`
+      const response = await fetch(URL)
+      const data = await response.json()
+      setBreads(data)
+    }
+
+    fetchData()
+  }, [])
+
+  const display = breads.map(bread => {
+    return (
+      <div key={bread._id}>
+        <p>{bread.name}</p>
+      </div>
+    )
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>BreadCRUD</h1>
+      {display}
     </div>
   );
 }
