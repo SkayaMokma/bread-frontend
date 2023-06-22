@@ -4,7 +4,7 @@ import Home from "./Components/Home";
 import Bread from "./Components/Bread";
 import New from "./Components/New";
 import UpdateBread from "./Components/UpdateBread";
-import './index.css'
+
 
 function App() {
   return (

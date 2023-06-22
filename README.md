@@ -11,8 +11,6 @@ This app has the ability to 'Delete' data within the database by removing a brea
 
 This application was styled using react-bootstrap.
 
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

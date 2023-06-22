@@ -34,7 +34,6 @@ function Home() {
   // add specific size for image in the card
   return (
     <>
-
     <h3>Home</h3>
     <br />
     <CardGroup>
