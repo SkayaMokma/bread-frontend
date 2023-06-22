@@ -1,3 +1,18 @@
+This project works alongside 'bread-backend' to display the functionalities of CRUD: Create, Read, Update, and Delete.
+This app has the ability to 'Create' data within the database by adding a new bread containing three pieces of data. On the New page, the user
+    can customize a new bread with a name, checkbox, and image. The name is a required field. If no image is provided, a default image will be displayed on that 
+    bread's page. The default for gluten is 'true'.
+This app has the ability to 'Read' data within the database by clicking on one of the existing breads in the list.
+    This page displays the data from the database for this bread.
+This app has the ability to 'Update' data within the database by editing an existing bread. After selecting an existing bread from the list, the user can click on
+    the Edit button, which will take them to the Edit page where they have the ability to update the data of a bread by changing one of its three pieces of data.
+This app has the ability to 'Delete' data within the database by removing a bread. After selecting an existing bread from the list, the user can click on the Delete button,
+    which will return the user to the Home page and the selected bread will be deleted permanently.
+
+This application was styled using react-bootstrap.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
