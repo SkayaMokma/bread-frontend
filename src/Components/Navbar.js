@@ -7,12 +7,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 function Navigation() {
     return (
         <>
-            <Navbar bg="bread" variant="light">
+            <Navbar id='navbar' bg="bread" variant="light">
                 <Container>
+                    <img src='https://www.eren.ch/cote/wp-content/uploads/sites/5/2020/04/bread_icon-icons.com_63160.png' height='40px' alt='cartoon bread logo'/>
                     <Navbar.Brand>BreadCRUD</Navbar.Brand>
-                    <Nav className="me-auto">
+                    <Nav className="me-auto" id='navbar-text'>
                         <Nav.Link href='/'>Home</Nav.Link>
-                        <Nav.Link href='new'>New</Nav.Link>
+                        <Nav.Link href='/new'>New</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>

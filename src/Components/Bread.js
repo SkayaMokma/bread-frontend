@@ -18,7 +18,6 @@ function Bread() {
 
         fetchData()
     }, [id, URL])
-
     const deleteBread = async () => {
         const response = await fetch(URL, {
             method: 'DELETE'
@@ -28,11 +27,13 @@ function Bread() {
     }
 
     const display = bread && (
-            <div>
+            <div id='bread-page-content'>
                 <h1>{bread.name}</h1>
                 <p>Has Gluten: {bread.hasGluten.toString()}</p>
-                <img src={bread.image} alt={bread.name} height={300} />
-                <p>Description:</p>
+                <img id='bread-page-bread-image' src={bread.image} alt={bread.name} height={300} />
+                    <p>
+                    {bread.description}
+                    </p>
                 <div>
                     <button onClick={() => navigate(`/bread/update/${id}`)}>Edit</button>
                     <button onClick={deleteBread}>Delete</button>
@@ -42,6 +43,7 @@ function Bread() {
 
     return (
         <div>
+            <img id='bread-background' src='https://wallpaperaccess.com/full/5770540.jpg' alt='cartoon bread background'/>
             {display}
         </div>
     )

@@ -33,14 +33,19 @@ function New() {
         const response = await fetch(URL, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify(breadInput)
+            body: JSON.stringify(breadInput),
         })
         if (response.status !== 201) console.log('error!')
         navigate('/')
     }
  
-    // add character limit later
     return (    
+       <>
+        <body>
+                <img id='new-background' src='https://images.vexels.com/media/users/3/171115/raw/04d452cfdf59216bedc2281a6930b112-bakery-shop-flat-illustration.jpg' alt='cartoon oven background'></img>
+            </body>
+            
+        <div id='new-page-content'>
         <form onSubmit={handleSubmit}>
             <h3>New</h3>
             <div>
@@ -49,7 +54,7 @@ function New() {
             </div>
             <br />
             <div>
-                <p>Does this bread have gluten:</p>
+                <p>Please select if the bread has gluten:</p>
                 <input onChange={handleGlutenCheck} defaultChecked={breadInput.hasGluten} value={breadInput.hasGluten} name='hasGluten' type='checkbox' />
             </div>
             <div>
@@ -63,7 +68,9 @@ function New() {
             </div>
             <br />
             <input type='submit' />
-        </form>
+            </form>
+        </div>
+        </>
     )
 }
 

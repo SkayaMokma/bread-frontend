@@ -1,6 +1,5 @@
 This project works alongside 'bread-backend' to display the functionalities of CRUD: Create, Read, Update, and Delete.
-This app has the ability to 'Create' data within the database by adding a new bread containing three pieces of data. On the New page, the user
-    can customize a new bread with a name, checkbox, and image. The name is a required field. If no image is provided, a default image will be displayed on that 
+This app has the ability to 'Create' data within the database by adding a new bread containing three pieces of data. On the New page, the user can customize a new bread with a name, checkbox, and image. The name is a required field. If no image is provided, a default image will be displayed on that 
     bread's page. The default for gluten is 'true'.
 This app has the ability to 'Read' data within the database by clicking on one of the existing breads in the list.
     This page displays the data from the database for this bread.
