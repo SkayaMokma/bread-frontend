@@ -32,7 +32,7 @@ function Bread() {
                 <p>Has Gluten: {bread.hasGluten.toString()}</p>
                 <img id='bread-page-bread-image' src={bread.image} alt={bread.name} height={300} />
                     <p>
-                    {bread.description}
+                        {bread.description}
                     </p>
                 <div>
                     <button onClick={() => navigate(`/bread/update/${id}`)}>Edit</button>

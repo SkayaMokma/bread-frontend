@@ -3,7 +3,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.css';
 
-// need to import index.css to style the navbar
 function Navigation() {
     return (
         <>
@@ -14,6 +13,7 @@ function Navigation() {
                     <Nav className="me-auto" id='navbar-text'>
                         <Nav.Link href='/'>Home</Nav.Link>
                         <Nav.Link href='/new'>New</Nav.Link>
+                        <Nav.Link href='/game'>Games</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>

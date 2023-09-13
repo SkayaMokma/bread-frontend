@@ -4,6 +4,8 @@ import Home from "./Components/Home";
 import Bread from "./Components/Bread";
 import New from "./Components/New";
 import UpdateBread from "./Components/UpdateBread";
+import Game from "./Components/Game"
+import MemoryMatch from "./Components/Games/MemoryMatch/MemoryMatch"
 
 function App() {
   return (
@@ -16,6 +18,10 @@ function App() {
           <Route path="/bread/:id" element={<Bread />} />
           <Route path="/bread/update/:id" element={<UpdateBread />} />
           <Route path="/new" element={<New />} />
+          {/* 
+          Add routes for separate game pages  */}
+          <Route path="/game" element={<Game />} />
+          <Route path="/memory-match" element={<MemoryMatch />} />
         </Routes>
       </Router>
     </div>
